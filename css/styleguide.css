@@ -176,21 +176,6 @@
   flex-direction: column;
   width: 1728px;
 }
-
-.b2 {
-  align-items: flex-start;
-  background-color: var(--mist-gray);
-  border-radius: 2px;
-  display: flex;
-  height: 28px;
-  min-width: 200px;
-  padding: 1.4px 59px;
-  letter-spacing: 0;
-  min-height: 13px;
-  width: 80px;
-}
-
-
 .e {
   background-color: var(--rock-blue);
   border-radius: 11px;
@@ -226,4 +211,81 @@
   margin-left: 15px;
   margin-top: 21px;
   min-width: 293px;
+}
+
+.btn {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #00000080;
+  border-radius: 2px;
+  display: flex;
+  height: 34px;
+  margin:10px 0px 10px 90px;
+  padding: 2px 20px;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  min-width: 140px;
+}
+
+select {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #00000080;
+  border-radius: 2px;
+  display: flex;
+  height: 34px;
+  margin:10px 0px 10px 0px;
+  padding: 2px 20px;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  min-width: 60px;
+}
+
+
+/*.button {*/
+/*  align-items: flex-start;*/
+/*  background-color: var(--mist-gray);*/
+/*  border-radius: 2px;*/
+/*  height: 30px;*/
+/*  margin-left: 52px;*/
+/*  min-width: 140px;*/
+/*  border: 1px solid #00000080;*/
+/*  background: 1px solid #00000080;*/
+/*}*/
+
+.bigbtn:hover {background: #eee;}
+.btn:hover {background: #ddd;}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+/*.greybutton {*/
+/*  align-items: flex-start;*/
+/*  background-color: var(--mist-gray);*/
+/*  border-radius: 2px;*/
+/*  display: flex;*/
+/*  height: 28px;*/
+/*  margin-left: 52px;*/
+/*  min-width: 157px;*/
+/*  padding: 2px 25px;*/
+/*  border: 1px solid #00000080;*/
+/*}*/
+
+
+.bigbtn {
+  align-items: flex-start;
+  background-color: #a3ccd7;
+  border: 1px solid #00000080;
+  border-radius: 2px;
+  display: flex;
+  height: 40px;
+  margin-left: 2px;
+  margin-top: 30px;
+  min-width: 367px;
+  padding: 8px 138px;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
 }

@@ -301,18 +301,6 @@
   min-width: 158px;
 }
 
-.drinktdetail .greybutton {
-  align-items: flex-start;
-  background-color: var(--mist-gray);
-  border-radius: 2px;
-  display: flex;
-  height: 28px;
-  margin-left: 52px;
-  min-width: 157px;
-  padding: 2px 25px;
-  border: 1px solid #00000080;
-}
-
 
 .drinktdetail .polygon-1 {
   height: 1px;
