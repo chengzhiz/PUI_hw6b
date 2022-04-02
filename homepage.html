@@ -31,11 +31,62 @@
                     <div class="l4"><span class="header">log in</span></div>
                     <div class="l5"><span class="header"><a href="mycart.html">my cart</a></span></div>
                 </div>
+                <!-- main advertisement pic-->
+
 
             </div>
             <!-- slogan and title-->
             <!-- one bug to fix: the subtitle is not sans-->
             <div class="group">
+                <div class="contentOverlap">
+                    </head>
+                    <body>
+
+                    <div class="slideshow-container">
+
+                        <div class="homeSlides fade">
+                            <img src="img/hp1.png" style="width:1000px">
+                        </div>
+
+                        <div class="homeSlides fade">
+                            <img src="img/hp4.png" style="width:1000px">
+                        </div>
+
+                        <div class="homeSlides fade">
+                            <img src="img/hp3.png" style="width:1000px">
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" style ="margin-left: 60px"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+
+                    <script>
+                        let slideIndex = 0;
+                        homeSlides();
+
+                        function homeSlides() {
+                            let i;
+                            let slides = document.getElementsByClassName("homeSlides");
+                            let dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(homeSlides, 4000); // Change image every 2 seconds
+                        }
+                    </script>
+                </div>
 
                 <div class="textGroup">
                     <h1 class="hHuge">
@@ -54,15 +105,11 @@
                                 <a href="drinkdetail.html">Search</a></span>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-                <!-- main advertisement pic-->
-                <div class="contentOverlap">
-                    <a href="drinklist.html"><img alt="three oatly box drink" src="img/mainpic1.png"/></a>
-                </div>
             </div>
+
+
         </div>
     </div>
 </div>
