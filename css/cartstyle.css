@@ -1,0 +1,787 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(114, 170, 114, 0.3);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    padding: 5px;
+    color: white;
+    background-color: #000;
+    text-decoration: none;;
+}
+
+.cart ion-icon {
+   vertical-align: bottom;
+   font-size: 20px;
+   padding-right: 5px;
+}
+
+.cart a {
+    oatdrinkr: pointer;
+    text-decoration: none;
+}
+
+.container,
+.container-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;;
+}
+
+.image {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    oatdrinkr: pointer;
+    text-align: center;
+    border-radius:2px;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4, 
+.image:hover .cart5 {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* ----------------- CART PAGE --------------- */
+
+.container-products {
+    max-width: 700px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container-products ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    oatdrinkr: pointer;
+}
+
+.product-header {
+    width: 200%;
+    max-width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.product ion-icon {
+    oatdrinkr: pointer;
+    
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+@media(max-width: 500px) {
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;;
+    }
+
+    .sm-hide {
+        display: none;;
+    }
+
+    .products,
+    .product-header {
+        justify-content: center;
+    }
+
+    .basketTotalContainer {
+        padding-right: 8%;
+    }
+}
+/* screen - drink detail that shared by both pages */
+
+/*part of the style and precise position referenced anima plug in*/
+
+.drinktdetail {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 1117px;
+    width: 1728px;
+}
+
+.drinktdetail .headerOverlap {
+    align-items: center;
+    background-image: url(../img/headerBG.png);
+    background-size: 100% 100%;
+    display: flex;
+    height: 169px;
+    justify-content: flex-end;
+    min-width: 1728px;
+    padding: 26px 103px;
+}
+
+.drinktdetail .logo {
+    align-self: flex-end;
+    height: 78px;
+    object-fit: cover;
+    width: 235px;
+}
+
+.drinktdetail .back {
+    letter-spacing: 0;
+    margin-left: 1160px;
+    min-height: 31px;
+    width: 86px;
+}
+
+/* group styles */
+
+.drinktdetail .overlap-group4 {
+    height: 814px;
+    margin-right: 62.0px;
+    margin-top: 23px;
+    position: relative;
+    width: 1148px;
+}
+
+.drinktdetail .group-128 {
+    align-items: flex-start;
+    display: flex;
+    height: 603px;
+    margin-left: 3px;
+    min-width: 1145px;
+}
+
+/*this is for the whole box */
+
+.drinktdetail .p{
+    opacity: 0;
+}
+
+.drinktdetail .picOverlap {
+    align-items: center;
+    align-self:center;
+    border-radius: 2px;
+    height: 437px;
+    position: relative;
+    width: 657px;
+
+}
+
+.drinktdetail .mainpic {
+    align-self:center;
+    height: 428px;
+    left:200px;
+    align-items: center;
+    position: relative;
+    top: 4px;
+    width: 320px;
+}
+
+.drinktdetail .mainpic2 {
+    align-self:center;
+    height: 428px;
+    left:100px;
+    align-items: center;
+    position: relative;
+    top: 4px;
+    width: 320px;
+
+}
+
+.drinktdetail .labelOverlap {
+    align-items: flex-end;
+    background-color: #8eacb766;
+    display: flex;
+    height: 39px;
+    left: 111px;
+    min-width: 433px;
+    padding: 7.1px 68.9px;
+    position: absolute;
+    top: 307px;
+}
+
+.drinktdetail .labelOverlap2 {
+    align-items: flex-end;
+    background-color: #bfbfbf;
+    display: flex;
+    height: 39px;
+    left: 111px;
+    min-width: 433px;
+    padding: 7.1px 68.9px;
+    position: absolute;
+    top: 307px;
+    opacity: 0.8;
+}
+
+.drinktdetail .labelCenterText {
+    -webkit-text-stroke: 0.1px var(--black);
+    letter-spacing: 0;
+    min-height: 21px;
+    text-align: center;
+    width: 295px;
+}
+
+
+.drinktdetail .group-112 {
+    height: 72px;
+    left: 39px;
+    position: absolute;
+    top: 92px;
+    width: 166px;
+}
+
+.drinktdetail .thumbNail {
+    position:relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-top: 20px;
+    min-width: 680px;
+}
+
+.drinktdetail .leftA {
+    height: 78px;
+    margin-bottom: 5.0px;
+    width: 12px;
+}
+
+.drinktdetail .thumbnailGroup {
+    height: 101px;
+    margin-left: 25px;
+    width: 111px;
+}
+
+.drinktdetail .leftA4 {
+    height: 78px;
+    margin-bottom: 5.0px;
+    margin-left: 25px;
+    width: 12px;
+}
+
+.drinktdetail .desGroup {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 118px;
+    min-height: 603px;
+    width: 370px;
+}
+
+.drinktdetail .attributeGroup {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    min-height: 320px;
+    width: 368px;
+}
+
+.drinktdetail .lineGroup {
+    align-items: center;
+    display: flex;
+    height: 43px;
+    min-width: 371px;
+}
+
+.drinktdetail .original-flavor {
+    letter-spacing: -1px;
+    min-height: 43px;
+    min-width: 260px;
+
+}
+
+.drinktdetail .ID {
+    letter-spacing: 0;
+    margin-left: 26px;
+    margin-top: 8.0px;
+    min-height: 21px;
+    min-width: 81px;
+}
+
+.drinktdetail .flavor {
+    align-items: flex-end;
+    display: flex;
+    margin-left: 1px;
+    margin-top: 23px;
+    min-width: 293px;
+}
+
+.drinktdetail .flavor {
+    letter-spacing: 0;
+    min-height: 21px;
+    min-width: 53px;
+}
+
+.drinktdetail .flavorGroup {
+    align-items: flex-end;
+    display: flex;
+    margin-left: 20px;
+    min-width: 222px;
+}
+
+.drinktdetail .ellipse-1 {
+    background-color: var(--rock-blue);
+    border-radius: 11px;
+    height: 22px;
+    width: 22px;
+}
+
+.drinktdetail .vanilla {
+    letter-spacing: 0;
+    margin-left: 19px;
+    min-height: 21px;
+    min-width: 54px;
+}
+
+.drinktdetail .ellipse-2 {
+    background-color: var(--silver);
+    border-radius: 11px;
+    height: 22px;
+    margin-left: 20px;
+    width: 22px;
+}
+
+.drinktdetail .original {
+    letter-spacing: 0;
+    margin-left: 19px;
+    min-height: 21px;
+    min-width: 62px;
+}
+
+.drinktdetail .priceGroup {
+    align-items: flex-start;
+    display: flex;
+    height: 21px;
+    margin-left: 1px;
+    margin-top: 21px;
+    min-width: 302px;
+}
+
+.drinktdetail .price {
+    letter-spacing: 0;
+    min-height: 21px;
+    min-width: 44px;
+}
+
+.drinktdetail .x4-each {
+    letter-spacing: 0;
+    margin-left: 29px;
+    min-height: 21px;
+    min-width: 71px;
+}
+
+.drinktdetail .or {
+    letter-spacing: 0;
+    margin-left: 25px;
+    min-height: 21px;
+    min-width: 17px;
+}
+
+.drinktdetail .x30-for-10 {
+    letter-spacing: 0;
+    margin-left: 25px;
+    min-height: 21px;
+}
+
+.drinktdetail .subPeriodGroup {
+    align-items: flex-end;
+    display: flex;
+    margin-left: 1px;
+    margin-top: 18px;
+    min-width: 369px;
+}
+
+.drinktdetail .attribute {
+    letter-spacing: 0;
+    min-height: 21px;
+    min-width: 158px;
+}
+
+
+.drinktdetail .polygon-1 {
+    height: 1px;
+    margin-left: 15px;
+    margin-top: 5.0px;
+    width: 1px;
+}
+
+.drinktdetail .ratingGroup {
+    align-items: center;
+    display: flex;
+    margin-left: 1px;
+    margin-top: 20px;
+    min-width: 264px;
+}
+
+.drinktdetail .rating {
+    min-height: 21px;
+    min-width: 55px;
+    margin-right: 10px;
+}
+
+.drinktdetail .group-67 {
+    height: 33px;
+    margin-left: 18px;
+    width: 189px;
+}
+
+.drinktdetail .amountgroup {
+    align-items: flex-end;
+    display: flex;
+    height: 74px;
+    margin-left: 1px;
+    margin-top: 17px;
+    min-width: 367px;
+}
+
+.drinktdetail .amountcontainer{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 74px;
+    width: 129px;
+}
+
+.drinktdetail .amount {
+    letter-spacing: 0;
+    min-height: 21px;
+}
+
+.drinktdetail .addtocart {
+    align-items: flex-start;
+    background-color: var(--mist-gray);
+    border-radius: 2px;
+    display: flex;
+    height: 28px;
+    margin: 10px;
+    min-width: 200px;
+    padding: 0.8px 55px;
+}
+
+
+.drinktdetail .addtocartbig {
+    align-items: flex-start;
+    background-color: #a3ccd7;
+    border: 1px solid #00000080;
+    border-radius: 2px;
+    display: flex;
+    margin-left: 2px;
+    margin-top: 30px;
+    min-width: 367px;
+    padding: 8px 138px;
+}
+
+
+.drinktdetail .group-110 {
+    align-items: center;
+    display: flex;
+    margin:16px;
+    min-width: 1148px;
+}
+
+.drinktdetail .incomments {
+    border-radius: 2px;
+    height: 155px;
+    position: relative;
+    width: 340px;
+}
+
+
+/* comment boxes below */
+
+.drinktdetail .commentsfill{
+    left: 32px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 18px;
+    width: 280px;
+}
+
+.drinktdetail .location {
+    left: 205px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: right;
+    top: 122px;
+}
+
+.drinktdetail .rect1 {
+    border: 1px solid #000000cc;
+    align-items: flex-start;
+    background-color: #a3ccd7;
+    border-radius: 2px;
+    display: flex;
+    height: 160px;
+    margin-left: 17px;
+    min-width: 150px;
+    padding: 9px 37px;
+    opacity: 0.7;
+}
+
+.drinktdetail .line {
+    height: 1px;
+    left: 30px;
+    position: absolute;
+    top: 103px;
+    width: 280px;
+}
+
+.drinktdetail .overlap-group {
+    border-radius: 2px;
+    height: 155px;
+    margin-left: 64px;
+    position: relative;
+    width: 340px;
+}
+
+
+.drinktdetail .singleprice {
+    letter-spacing: 0;
+    margin-left: 29px;
+    min-height: 21px;
+    min-width: 71px;
+}
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: top;
+    align-items: center;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    vertical-align: top;
+    align-items: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    position: relative;
+    vertical-align: top;
+    margin: 2px 10px 2px 100px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.oatdrinkr {
+    oatdrinkr: pointer;
+    vertical-align: top;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    opacity: 0.5;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    oatdrinkr: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #dddddd;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: lightblue;
+    opacity:0.8;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    align-items: center;
+    text-align: center;
+    background-color: #a3ccd7;
+    width: 600px;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    position: relative;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    width: 100px;
+    /*padding: 8px 30px;*/
+    margin:10px;
+    opacity: 0.6;
+    align-content: center;
+    align-items: flex-end;
+    position: relative;
+    vertical-align: top;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}

@@ -93,9 +93,7 @@ li a {
 }
 
 .cart a {
-  background-color: royalblue;
-  color: #fff;
-  cursor: pointer;
+  oatdrinkr: pointer;
   text-decoration: none;
 }
 
@@ -121,7 +119,7 @@ li a {
   background-color: darkgrey;
   transition: all 0.3s ease-in-out;
   opacity: 0;
-  cursor: pointer;
+  oatdrinkr: pointer;
   text-align: center;
   border-radius:2px;
 }
@@ -148,10 +146,9 @@ li a {
 
 .container-products ion-icon {
   font-size: 25px;
-  color: blue;
   margin-left: 10px;
   margin-right: 10px;
-  cursor: pointer;
+  oatdrinkr: pointer;
 }
 
 .product-header {
@@ -200,7 +197,7 @@ li a {
 }
 
 .product ion-icon {
-  cursor: pointer;
+  oatdrinkr: pointer;
 
 }
 

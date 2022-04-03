@@ -7,9 +7,11 @@
     <meta content="width=1920, maximum-scale=1.0" name="viewport"/>
     <meta content="website" name="og:type"/>
     <meta content="photo" name="twitter:card"/>
+    <title>drink detail3</title>
     <link href="css/drinkdetail.css" rel="stylesheet" type="text/css"/>
     <link href="css/styleguide.css" rel="stylesheet" type="text/css"/>
     <link href="css/globals.css" rel="stylesheet" type="text/css"/>
+
 </head>
 <body style="margin: 0; background: #ffffff">
 <input id="anPageName" name="page" type="hidden" value="drinktdetail"/>
@@ -26,8 +28,9 @@
                 <div class="l1"><span class="header"> why oat drink</span></div>
                 <div class="l2"><span class="header"> <a href="drinklist.html">drink lists</a></span></div>
                 <div class="l3"><span class="header"><a href="drinkdetail.html">about us</a></span></div>
-                <div class="l4"><span class="header">log in</span></div>
-                <div class="l5"><span class="header"><a href="mycart.html">my cart</a></span></div>
+                <div class="l4"><span class="header"><a href="index.html">products</a></span></div>
+                <div class="l4"><span class="header"><a href="index.html">products</a></span></div>
+                <div class="l5"><span class="header"><a href="index.html">my cart</a></span></div>
             </div>
 
         </div>
@@ -78,16 +81,16 @@
 
                                 <div class="row" >
                                     <div class="column">
-                                        <img class="demo cursor" src="img/s1.png"  onclick="currentSlide(1)" alt="barista version">
+                                        <img class="demo oatdrinkr" src="img/s1.png"  onclick="currentSlide(1)" alt="barista version">
                                     </div>
                                     <div class="column">
-                                        <img class="demo cursor" src="img/s2.png"  onclick="currentSlide(2)" alt="special version">
+                                        <img class="demo oatdrinkr" src="img/s2.png"  onclick="currentSlide(2)" alt="special version">
                                     </div>
                                     <div class="column">
-                                        <img class="demo cursor" src="img/s3.png"  onclick="currentSlide(3)" alt="organic version">
+                                        <img class="demo oatdrinkr" src="img/s3.png"  onclick="currentSlide(3)" alt="organic version">
                                     </div>
                                     <div class="column">
-                                        <img class="demo cursor" src="img/s4.png"  onclick="currentSlide(4)" alt="original version">
+                                        <img class="demo oatdrinkr" src="img/s4.png"  onclick="currentSlide(4)" alt="original version">
                                     </div>
                                 </div>
                             </div>
@@ -184,36 +187,37 @@
                                 </div>
                             </div>
                             <div >
-                                <div class="text2">
-                                    <button class="bigbtn" onclick="moveRight()" id="clickme">Add to cart</button>
+                                <div class="text2"><a href="index.html">
+                                    <button class="bigbtn"  id="clickme">Go to cart</button></a>
+
                                     <img id="myImage" src="img/drink4.png" style="position:fixed;
                             left:0px; top:-30px; z-index:10; height:0px; opacity:1"/>
                                 </div>
                             </div>
-                            <script type="text/javascript">
-                                <!--
-                                var imgObj ;
-                                var animate ;
-                                function init(){
-                                    imgObj = document.getElementById('myImage');
-                                    imgObj.style.position= 'relative';
-                                    imgObj.style.left = '0px';
-                                    imgObj.style.top = '0px';
-                                    imgObj.style.opacity = 0;
-                                    imgObj.style.height = "0px";
-                                }
+<!--                            <script type="text/javascript">-->
+<!--                                &lt;!&ndash;-->
+<!--                                var imgObj ;-->
+<!--                                var animate ;-->
+<!--                                function init(){-->
+<!--                                    imgObj = document.getElementById('myImage');-->
+<!--                                    imgObj.style.position= 'relative';-->
+<!--                                    imgObj.style.left = '0px';-->
+<!--                                    imgObj.style.top = '0px';-->
+<!--                                    imgObj.style.opacity = 0;-->
+<!--                                    imgObj.style.height = "0px";-->
+<!--                                }-->
 
-                                function moveRight(){
-                                    imgObj.style.height = "40px";
-                                    imgObj.style.opacity = 1;
-                                    imgObj.style.left = parseInt(imgObj.style.left) + 7.5 + 'px'; // move from the left 5 pixels
-                                    imgObj.style.top = parseInt(imgObj.style.top) - 10 + 'px';
-                                    animate = setTimeout(moveRight,10); // call moveRight in 20 milliseconds
-                                }
+<!--                                function moveRight(){-->
+<!--                                    imgObj.style.height = "40px";-->
+<!--                                    imgObj.style.opacity = 1;-->
+<!--                                    imgObj.style.left = parseInt(imgObj.style.left) + 7.5 + 'px'; // move from the left 5 pixels-->
+<!--                                    imgObj.style.top = parseInt(imgObj.style.top) - 10 + 'px';-->
+<!--                                    animate = setTimeout(moveRight,10); // call moveRight in 20 milliseconds-->
+<!--                                }-->
 
-                                window.onload =init; // starts animation when page loads//-->
+<!--                                window.onload =init; // starts animation when page loads//&ndash;&gt;-->
 
-                            </script>
+<!--                            </script>-->
 
                             <!--drink descriptions-->
                             <div class="group-120">

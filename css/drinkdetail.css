@@ -136,11 +136,9 @@
 .drinktdetail .thumbNail {
   position:relative;
   align-items: center;
-  display: flex;
-  justify-content: space-between;
   margin-right: 0px;
   margin-top: 20px;
-  min-width: 680px;
+  min-width: 300px;
 }
 
 .drinktdetail .leftA {
@@ -472,15 +470,14 @@ img {
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
   position: relative;
   vertical-align: top;
-  margin: 2px 10px 2px 100px;
+  margin: 2px 10px;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
+.oatdrinkr {
+  oatdrinkr: pointer;
   vertical-align: top;
   align-items: center;
   text-align: center;
@@ -491,7 +488,7 @@ img {
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
+  oatdrinkr: pointer;
   position: absolute;
   top: 40%;
   width: auto;

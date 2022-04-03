@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styleguide.css"/>
+  <link rel="stylesheet" type="text/css" href="css/globals.css"/>
+
+</head>
+<body>
+<div class="center">
+
+  <div class="drinklist screen">
+      <div class="columns">
+        <!--header section-->
+
+        <div class="headerOverlap">
+          <a href="homepage.html">
+            <img class="logo" src="img/logo.png"/></a>
+
+          <div class="hgroup">
+            <div class="l1"><span class="header"> why oat drink</span></div>
+            <div class="l2"><span class="header"> <a href="drinklist.html">drink lists</a></span></div>
+            <div class="l3"><span class="header"><a href="drinkdetail.html">about us</a></span></div>
+            <div class="l4"><span class="header"><a href="index.html">products</a></span></div>
+
+            <div class="l5"><span class="header"><a href="index.html">my cart</a></span></div>
+            <ul>
+              <li class="submenu">
+                <img src="img/cart.png" id="img-carrito">
+                <div id="carrito">
+                  <table id="lista-carrito" class="u-full-width text2">
+                    <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th></th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                  <a href="#" id="vaciar-carrito" class="button u-full-width">clear cart</a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+<!--        cart item part from https://github.com/mariav53/js-shopping-cart ripo-->
+
+
+  <div id="lista-oatdrinks">
+    <div class="oatdrinks__container" >
+      <div class="oatdrink__item" style="width:200px">
+        <div class="oatdrink__card">
+          <img src="img/drink31.png" class="image__oatdrink">
+          <div class="info__card">
+            <h4>Organic Oatly Drink</h4>
+             <span class="discount">$5</span> </p>
+            <a href="#" class="addcart" data-id="1"><i class="add2cart"></i>&nbsp;  add drink to cart</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="oatdrink__item ">
+        <div class="oatdrink__card" style="width:200px">
+          <img src="img/drink31.png" class="image__oatdrink">
+          <div class="info__card">
+            <h4>Oatly Drink2</h4>
+             <span class="discount">$4</span> </p>
+            <a href="#" class="addcart" data-id="2"><i></i>&nbsp;  add drink to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="oatdrink__item">
+        <div class="oatdrink__card" style="width:200px">
+          <img src="img/drink21.png" class="image__oatdrink">
+          <div class="info__card">
+            <h4>Barista Edition Oatly Drink</h4>
+             <span class="discount">$4</span>  </p>
+            <a href="#"  class="addcart"  data-id="3"><i ></i>&nbsp;  add drink to cart</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="oatdrink__item" style="width:200px">
+        <div class="oatdrink__card">
+          <img src="img/drink11.png" class="image__oatdrink">
+          <div class="info__card">
+            <h4>Original Oatly Drink</h4>
+             <span class="discount">$3</span>  </p>
+            <a href="#"  class="addcart"  data-id="4">  add drink to cart</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="oatdrink__item" style="width:200px">
+        <div class="oatdrink__card">
+          <img src="img/drink11.png" class="image__oatdrink">
+          <div class="info__card">
+            <h4>Original Oatly Drink</h4>
+             <span class="discount">$5</span>  </p>
+            <a href="#"  class="addcart"  data-id="6"> add drink to cart</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="oatdrink__item" style="width:200px">
+        <div class="oatdrink__card">
+          <img src="img/drink21.png" class="image__oatdrink">
+          <div class="info__card">
+            <h4>Barista Edition Oatly Drink</h4>
+             <span class="discount">$4</span>  </p>
+            <a href="#"  class="addcart"  data-id="7">  add drink to cart</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="oatdrink__item"style="width:200px">
+        <div class="oatdrink__card">
+          <img src="img/drink31.png" class="image__oatdrink">
+          <div class="info__card">
+            <h4>Organic Oatly Drink</h4>
+             <span class="discount">$6</span>  </p>
+            <a href="#" class="addcart"  data-id="8">&nbsp;  add drink to cart</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>

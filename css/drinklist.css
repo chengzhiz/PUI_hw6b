@@ -356,8 +356,8 @@ img {
 }
 
 /* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
+.oatdrinkr {
+  oatdrinkr: pointer;
   vertical-align: top;
   align-items: center;
   text-align: center;
@@ -368,7 +368,7 @@ img {
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
+  oatdrinkr: pointer;
   position: absolute;
   top: 40%;
   width: auto;
